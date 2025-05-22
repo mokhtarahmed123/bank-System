@@ -1,0 +1,176 @@
+/* Simple CSS for Password Confirmation Pages */
+
+/* General Styles */
+:root {
+   --primary-color: #0052cc;
+   --secondary-color: #003580;
+   --light-color: #f5f7fa;
+   --dark-color: #172b4d;
+   --gray-color: #6b778c;
+}
+
+body {
+   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+   color: #42526e;
+   background-color: #fafbfc;
+   margin: 0;
+   padding: 0;
+}
+
+h2 {
+   color: var(--dark-color);
+   margin-bottom: 10px;
+}
+
+a {
+   text-decoration: none;
+   color: var(--primary-color);
+}
+
+.btn {
+   border-radius: 6px;
+   padding: 10px 24px;
+   font-weight: 500;
+   transition: all 0.3s ease;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+   cursor: pointer;
+}
+
+.btn-primary {
+   background-color: var(--primary-color);
+   border-color: var(--primary-color);
+   color: white;
+}
+
+.btn-primary:hover {
+   background-color: var(--secondary-color);
+   transform: translateY(-2px);
+}
+
+.btn-block {
+   display: block;
+   width: 100%;
+}
+
+/* Navigation */
+.navbar {
+   background-color: var(--primary-color);
+   padding: 16px 0;
+   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+   display: flex;
+   align-items: center;
+}
+
+.logo-icon {
+   background-color: #fff;
+   color: var(--primary-color);
+   width: 38px;
+   height: 38px;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 800;
+   font-size: 18px;
+   margin-right: 10px;
+}
+
+.logo-text {
+   color: #fff;
+   font-weight: 700;
+   letter-spacing: 0.5px;
+}
+
+/* Form Styles */
+.confirm-password-section, .simple-section {
+   padding: 80px 0;
+   min-height: calc(100vh - 200px);
+}
+
+.form-card, .simple-card {
+   background-color: #fff;
+   border-radius: 12px;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+   padding: 40px;
+   margin-bottom: 30px;
+}
+
+.form-header {
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.form-header p {
+   color: var(--gray-color);
+}
+
+.form-group {
+   margin-bottom: 25px;
+}
+
+.form-group label {
+   display: block;
+   margin-bottom: 8px;
+   font-weight: 500;
+}
+
+.form-group label i {
+   margin-right: 8px;
+   color: var(--primary-color);
+}
+
+.form-control {
+   height: 40px;
+   border-radius: 6px;
+   border: 1px solid #dfe1e6;
+   padding: 10px 15px;
+   font-size: 16px;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.form-control:focus {
+   border-color: var(--primary-color);
+   outline: none;
+}
+
+.form-action {
+   margin-top: 30px;
+}
+
+/* Success Page Styles */
+.simple-card {
+   text-align: center;
+}
+
+.simple-icon {
+   font-size: 50px;
+   color: var(--primary-color);
+   margin-bottom: 20px;
+}
+
+.simple-card p {
+   color: var(--gray-color);
+   margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+   background-color: var(--dark-color);
+   color: rgba(255, 255, 255, 0.8);
+   padding: 20px 0;
+}
+
+.footer-bottom {
+   padding: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .form-card, .simple-card {
+      padding: 30px 20px;
+   }
+}
